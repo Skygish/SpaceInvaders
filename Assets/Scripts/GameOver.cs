@@ -11,6 +11,7 @@ public class GameOver : MonoBehaviour {
     void Start() {
         gameOver = GetComponent<TextMeshProUGUI>();
         gameOver.enabled = false;
+        Time.timeScale = 1;
     }
 
     // Update is called once per frame

@@ -7,6 +7,7 @@ public class EnemyController : MonoBehaviour {
 
 	private Transform enemyHolder;
 	public float speed;
+    public float maxBound, minBound;
 
 	public GameObject shot;
 	public TextMeshProUGUI winText;
@@ -22,7 +23,7 @@ public class EnemyController : MonoBehaviour {
     	enemyHolder.position += Vector3.right * speed;
 
     	foreach (Transform enemy in enemyHolder) {
-    		if (enemy.position.x < -11.5 || enemy.position.x > 11.5) {
+    		if (enemy.position.x < minBound || enemy.position.x > maxBound) {
     			speed = -speed * 1.1f;
     			enemyHolder.position += Vector3.down * 0.5f;
     			return;

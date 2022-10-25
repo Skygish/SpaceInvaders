@@ -147,8 +147,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.1
-  maxBound: 11.5
-  minBound: -11.5
+  maxBound: 10
+  minBound: -10
   shot: {fileID: 6254573414054582286, guid: 0a9defbec10ea4badb9126ff3a60ea2e, type: 3}
   shotSpawn: {fileID: 4953330374188947431}
   fireRate: 0.5
